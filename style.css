@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f3f3fb;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  width: 600px;
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+            0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+  border-radius: 2%;
+}
+
+h3{
+  padding: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card {
+  padding: 1rem 5rem;
+}
+
+.question{
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 0;
+}
+
+.ul{
+  padding: 0;
+}
+
+ul li label{
+  margin: 2rem;
+  font-size: 20px;
+}
+
+ul li {
+  list-style-type: none;
+  padding: .25rem;
+}
+
+button {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 1.3rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #4370e7;
+  color: #fff;
+}
+
+button:hover{
+  background-color: #4370c1;
+}
+
+/* TODO*/
+/* 
+- card ena jasakarto +
+- Fonts jaievieto +
+- radio check no teksta jaatdala +
+- poga atbildet pa visu apaksu
+- pogas krasa
+- teksta izmers +
+- ja score ir 5/5 kkads papildus teksts un bilde
+- rezultatu card jaizmaina +
+*/
+
+@media screen and (max-width: 400px){
+  .quiz-container{
+    width: 305px;
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 1.8rem;
+  }
+
+  ul li label{
+    margin: 2rem;
+    font-size: 17px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+}
